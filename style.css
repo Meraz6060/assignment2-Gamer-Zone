@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.nav-container{
+    min-height: 50px;
+    background-color: #FFFF;
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.logo-container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.logo-img{
+    width: 85px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.logo-container h1{
+    font-size: 40px;
+}
+.nav-item-container{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item-container a{
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.nav-item-btn{
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+/* nav design here */
+
+.banner-contianer{
+    background-color: rgb(243, 231, 231);
+    margin: 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-text{
+    width: 50%;
+    text-align: center; 
+}
+.banner-text h1{
+    font-size: 48px;
+
+}
+.banner-text2{
+    margin: 20px 0px;
+    font-family: sans-serif;
+    font-size: 85px;
+    font-weight: 900;
+    background-image: linear-gradient(to bottom, red, blue);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.banner-text3 p{ 
+    text-align: left;
+    padding-left: 200px;
+    margin-bottom: 20px;
+
+}
+.fa-brands{
+    margin-top: 10px;
+}
+
+.fa-regular, .fa-solid{ 
+    color: red;
+    padding: 5px 10px;
+}
+.fa-user-group{
+    color: black;
+    padding: 5px 5px;  
+}
+.banner-btn1, .banner-btn2{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color:rgb(236, 28, 174);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+.banner-btn2{
+    background-color: #4EC5F7;
+    margin-left: 20px;
+}
+
+.banner-img{
+    width: 50%;
+}
+.banner-img img{
+    width: 100%;
+    height: auto;
+}
+
+ /* Online game section start */
+.online-game{
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(243, 231, 231);
+}
+.online-game-title h1{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 0;
+    
+}
+.online-game-title p{
+    font-size: 18px;
+    margin: 0px auto ;   
+}
+.online-game-grid{
+    margin-top: 20px;
+    display: grid;
+    max-width: 1400px;
+    min-height: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.game-info{
+    width: 100%;
+}
+.game-img{
+    position: relative;
+    width: 100%;
+}
+.game-img img{
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+/* .game-img img:hover{
+        transform: scale(1.1)
+} */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgb(94, 46, 46);
+  }
+  
+  .game-img:hover .overlay{
+    opacity: 0.8;
+  }
+  .icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-user:hover {
+  color: #eee;
+}
+.game-info p{
+    text-align: left;
+    padding-left: 10px;
+}
+/* Play section start  */
+.main-play-section{
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    height: 700px;
+}
+.play-section{
+    display: flex;
+    padding-bottom: 0px;
+}
+.play-content{
+    width: 100%;
+    margin-left: 80px;
+    padding: 150px;
+}
+.play-content h2{
+    font-size: 40px;
+    text-align: right;
+}
+.play-content p{
+    font-size: 15px;
+    text-align: right;
+}
+.play-img{
+    width: 50%;
+    padding-right: 0px;
+    
+}
+.play-img1{
+    padding-top: 50px;
+    width: 550px;
+    height: 650px;   
+}
+.play-img2{
+    position: relative;
+}
+.play-img2 img{
+    width: 220px;
+    height: 260px;
+    position: absolute;
+    top: -215px;
+    left: -70px;
+} 
+/* career section  */
+.career-section{
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(245, 8, 174);
+}
+.career-container{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding-left: 20px;
+}
+
+.career-content{
+    color: white;
+    margin:20px 30px;
+    width: 100%;
+    text-align: left;
+    padding: 30px 30px;
+}
+.career-content h1{
+    text-align: left;
+
+}
+.career-content p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+.two-pragraf{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+.left-div p{
+    text-align: left;
+    line-height: 2.5rem;
+}
+.right-div p{
+    text-align: right;
+    line-height: 2.5rem;
+}
+.career-content button{
+    background-color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    padding: 15px 25px;
+    border-radius: 20px;
+    border: none;
+}
+.career-pic{
+
+    width: 100%;
+    margin: 20px 10px ;
+
+}
+.career-pic img{
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+
+
+/* btn section */
+.btn-secttion{
+    max-width: 1400px;
+    height: 430PX;
+    margin: 0 auto;
+    text-align: center;
+    background-color:  #eff1eaf8;
+}
+.btncontiner{
+    margin: 20px 10px;
+    min-height: 300px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.single-btn{
+    background-color: white;
+    width: auto;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 30px;
+}
+.single-btn:hover{  
+    border: 2px solid gold;
+}
+.single-btn img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    padding-right: 10px;
+}
+.single-btn p{
+font-size: 18px;
+font-weight: 400;
+}
+.fa-brands p{
+    font-size: 20px;
+    font-weight: bold;
+}
+/* footer section start  */
+.footer-section{
+    color: white;
+    max-width: 1400px;
+    height: 500 PX;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color:black;
+
+}
+.footer-content{
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.footer-logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-menu, .social-media, .footcontent{
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer-menu li, .social-media li{
+    text-decoration: none;
+    font-size: 15px;
+    list-style: none;
+}
+.footer-content p{
+    font-size: 10px;
+}
+.footcontent li{
+    font-size: 12px;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:400px) {
+    .nav-container{
+        flex-direction: column;
+    }
+    .nav-item-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-item-container a{
+        text-decoration: none;
+        margin-top: 20px;
+    }
+    .nav-item-btn{
+        width: 100%;
+        text-align: center;
+    }
+    /* banner section  */
+
+    .banner-contianer{
+        flex-direction: column;
+    }
+    .banner-text{
+        width: 100%;
+        text-align: center; 
+    }
+    .banner-text3 p{ 
+        font-size: 15px;
+        text-align: left;
+        padding-left: 20px;
+        margin-bottom: 20px; 
+    }
+    .banner-img{
+        width: 100%;
+    }
+/* game section */
+    .online-game-grid{
+        grid-template-columns: repeat(1, 1fr);
+    } 
+    .online-game-title h1{
+        font-size: 25px;
+    }
+    .online-game-title p{
+        font-size: 10px;
+    }
+/* paly section   */
+.play-section{
+    flex-direction: column;
+}
+.play-content{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+   font-size: 10px;
+}
+.play-img{
+    width:100%;
+}
+/* Career Section  */
+
+.career-container{
+    grid-column: auto;
+
+}
+.career-content{
+    width: 100%;
+}
+.two-pragraf{
+    width: 100%;
+}
+.career-pic{
+    width: 100%;
+}
+
+/* BUTTON SECTION  */
+.btncontiner{
+    flex-direction: column;
+}
+
+/* footer responsive  */
+.footer-content{
+    flex-wrap: wrap;
+    width: 40%;
+
+}
+}
+
+
+
+
+
+
+
